@@ -1,0 +1,19 @@
+Main Git site:
+https://git-scm.com/
+
+Git Pro book:
+https://git-scm.com/book/en/v2
+
+Popularity statistics:
+http://www.arepeopletalkingaboutit.com/tags/cvs,svn,git,perforce,bazaar,mercurial
+
+Interactive Git tutorials:
+http://pcottle.github.io/learnGitBranching/
+http://www.wei-wang.com/ExplainGitWithD3/#
+http://gitready.com/
+
+Good blog post abut comments:
+http://chris.beams.io/posts/git-commit/
+
+Good blog post about reset function:
+https://git-scm.com/blog/2011/07/11/reset.html

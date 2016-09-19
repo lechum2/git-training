@@ -3,3 +3,6 @@ git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe
 git whatchanged
 
 git log --graph --oneline --decorate --all
+
+git stash
+

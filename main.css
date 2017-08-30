@@ -90,6 +90,139 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 html, body {
   height: 100%; }
 
+  .tile:before {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+  .tile.noPushItems:before {
+    display: none; }
+  .tile > img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.5s cubic-bezier(0.105, 0.86, 0.52, 0.965);
+    transition: all 0.5s cubic-bezier(0.105, 0.86, 0.52, 0.965); }
+  .tile .mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    opacity: 0;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; }
+    .tile .mask, .tile .mask * {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+  .tile .mask-content {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 0;
+    padding: 0 4% 2.8em 4%;
+    z-index: 100; }
+  .tile .mask-headline {
+    font-family: "ClanNarrow-Medium";
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    line-height: 1;
+    margin-bottom: 0.2em;
+    position: relative;
+    z-index: 100; }
+  .tile .mask-text {
+    width: 100%;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.8em;
+    font-weight: normal; }
+  .tile .buttonWrap {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5em;
+    position: relative; }
+  .tile .socialButtons {
+    width: 100%;
+    height: 14px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 90%;
+    z-index: 100;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .tile .socialButtons ul {
+      display: inline-block;
+      vertical-align: middle; }
+    .tile .socialButtons li {
+      float: left;
+      height: 14px; }
+      .tile .socialButtons li.shadow {
+        width: 24px;
+        position: relative; }
+      .tile .socialButtons li.shadow.first {
+        background-image: url(../i/sprite/sprite.png);
+        background-position: -174px -278px;
+        width: 24px;
+        height: 14px; }
+      .tile .socialButtons li.shadow.last {
+        background-image: url(../i/sprite/sprite.png);
+        background-position: -126px -278px;
+        width: 24px;
+        height: 14px; }
+      .tile .socialButtons li.ico {
+        width: 16px;
+        -webkit-transition-property: opacity;
+        transition-property: opacity;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s; }
+        .tile .socialButtons li.ico:hover {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+          opacity: 0.7; }
+        .tile .socialButtons li.ico a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+      .tile .socialButtons li.facebook {
+        background-image: url(../i/sprite/sprite.png);
+        background-position: -91px -537px;
+        width: 18px;
+        height: 18px;
+        margin-left: 10px; }
+      .tile .socialButtons li.twitter {
+        background-image: url(../i/sprite/sprite.png);
+        background-position: -520px -250px;
+        width: 18px;
+        height: 18px;
+        margin: 0 8px 0 5px; }
+      .tile .socialButtons li.pinterest {
+        background-image: url(../i/sprite/sprite.png);
+        background-position: -520px -322px;
+        width: 18px;
+        height: 18px;
+        margin-right: 10px; }
+  .tile:hover:before {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+  .tile:hover img,
+  .tile.effect-on img {
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
+  .tile:hover .mask,
+
 html {
   font-size: 62.5%; }
 
@@ -407,138 +540,7 @@ blockquote:hover:before {
 	 * .your-custom-class .mask-content { @extend %verticalAlign-[direction];}
 	 *
 	 */ }
-  .tile:before {
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s; }
-  .tile.noPushItems:before {
-    display: none; }
-  .tile > img {
-    height: 100%;
-    width: 100%;
-    display: block;
-    position: relative;
-    -webkit-transition: all 0.5s cubic-bezier(0.105, 0.86, 0.52, 0.965);
-    transition: all 0.5s cubic-bezier(0.105, 0.86, 0.52, 0.965); }
-  .tile .mask {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 100;
-    opacity: 0;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s; }
-    .tile .mask, .tile .mask * {
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-  .tile .mask-content {
-    width: 100%;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    position: relative;
-    top: 0;
-    padding: 0 4% 2.8em 4%;
-    z-index: 100; }
-  .tile .mask-headline {
-    font-family: "ClanNarrow-Medium";
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-    line-height: 1;
-    margin-bottom: 0.2em;
-    position: relative;
-    z-index: 100; }
-  .tile .mask-text {
-    width: 100%;
-    color: #fff;
-    line-height: 1;
-    margin-bottom: 0.8em;
-    font-weight: normal; }
-  .tile .buttonWrap {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0.5em;
-    position: relative; }
-  .tile .socialButtons {
-    width: 100%;
-    height: 14px;
-    position: absolute;
-    text-align: center;
-    left: 0;
-    top: 90%;
-    z-index: 100;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-    .tile .socialButtons ul {
-      display: inline-block;
-      vertical-align: middle; }
-    .tile .socialButtons li {
-      float: left;
-      height: 14px; }
-      .tile .socialButtons li.shadow {
-        width: 24px;
-        position: relative; }
-      .tile .socialButtons li.shadow.first {
-        background-image: url(../i/sprite/sprite.png);
-        background-position: -174px -278px;
-        width: 24px;
-        height: 14px; }
-      .tile .socialButtons li.shadow.last {
-        background-image: url(../i/sprite/sprite.png);
-        background-position: -126px -278px;
-        width: 24px;
-        height: 14px; }
-      .tile .socialButtons li.ico {
-        width: 16px;
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
-        -webkit-transition-duration: 0.2s;
-        transition-duration: 0.2s; }
-        .tile .socialButtons li.ico:hover {
-          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-          opacity: 0.7; }
-        .tile .socialButtons li.ico a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-      .tile .socialButtons li.facebook {
-        background-image: url(../i/sprite/sprite.png);
-        background-position: -91px -537px;
-        width: 18px;
-        height: 18px;
-        margin-left: 10px; }
-      .tile .socialButtons li.twitter {
-        background-image: url(../i/sprite/sprite.png);
-        background-position: -520px -250px;
-        width: 18px;
-        height: 18px;
-        margin: 0 8px 0 5px; }
-      .tile .socialButtons li.pinterest {
-        background-image: url(../i/sprite/sprite.png);
-        background-position: -520px -322px;
-        width: 18px;
-        height: 18px;
-        margin-right: 10px; }
-  .tile:hover:before {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0; }
-  .tile:hover img,
-  .tile.effect-on img {
-    -ms-transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1); }
-  .tile:hover .mask,
+ 
   .tile.effect-on .mask {
     opacity: 1;
     visibility: visible; }

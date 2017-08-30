@@ -22,3 +22,4 @@ Donec ac nisi libero.
 Integer euismod a libero sit amet ornare.
 Praesent a egestas purus.
 new line in master
+Conflicting line in conflict branch

@@ -264,23 +264,6 @@ img {
 .size-4 {
   font-size: 4em; }
 
-.size-8 {
-  font-size: 8em; }
-
-h2 {
-  font-family: "ClanNarrow-Thin";
-  font-size: 4.7em; }
-
-.size-2 {
-  font-family: "ClanNarrow-Bold";
-  font-size: 3.7em; }
-
-h2.margin-1 {
-  margin-bottom: 20px; }
-
-h3 {
-  font-size: 2.6em; }
-
 .clearfix:before, .clearfix:after {
   content: "";
   display: table; }
@@ -315,6 +298,24 @@ textarea {
   outline: none;
   resize: none;
   overflow: auto; }
+
+  
+.size-8 {
+  font-size: 8em; }
+
+h2 {
+  font-family: "ClanNarrow-Thin";
+  font-size: 4.7em; }
+
+.size-2 {
+  font-family: "ClanNarrow-Bold";
+  font-size: 3.7em; }
+
+h2.margin-1 {
+  margin-bottom: 20px; }
+
+h3 {
+  font-size: 2.6em; }
 
 input[type="checkbox"],
 input[type="radio"] {

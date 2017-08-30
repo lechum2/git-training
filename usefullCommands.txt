@@ -9,3 +9,6 @@ git whatchanged
 git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 
 git log --graph --oneline --decorate --all
+
+git checkout --theirs main.css
+git checkout --ours main.css

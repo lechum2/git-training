@@ -9,7 +9,6 @@ http://www.arepeopletalkingaboutit.com/tags/cvs,svn,git,perforce,bazaar,mercuria
 
 Interactive Git tutorials:
 http://pcottle.github.io/learnGitBranching/
-http://www.wei-wang.com/ExplainGitWithD3/#
 http://gitready.com/
 
 Good blog post abut comments:
